@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-image: url(image/wp.png);
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #3f1359aa;
+    height: 90px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+body.dark-mode {
+    background-image: url(image/darkkwp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    width: 30%;
+    height: 100px;
+    margin-left: 50px;
+}
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ya da contain, istediğine göre */
+    display: block;
+}
+#navbar{
+    width: 70%;
+    height: 100px;
+}
+.navbar {
+    width: 100%;
+    height: 70px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 600px;
+  }
+  
+  .nav-links li a {
+    
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px;
+    height: 428px;
+}
+#addtravel{
+    width: 30%;
+    height:400px;
+    margin-left: 130px;
+    background-color: #130143;
+    border-radius: 20px;
+}
+/*plan ekle formu başlangıç*/
+#addtravel .add-destination {
+    width: 100%;
+    height: 400px;
+    color: white;
+    border-radius: 20px;
+   
+}
+
+#addtravel .add-destination h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 180px;
+    color: #e97e21;
+}
+.button-group {
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 50px;
+    width: 95%;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: #8507e5;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-group button.active {
+    background-color: #ff850b;
+    color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 307px;
+
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+form input, form textarea {
+    height: 30px;
+    padding: 8px;
+    width: 90%;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #371783;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+}
+
+
+form button[type="submit"] {
+    width: 50%;
+    margin-top: 12px;
+    padding: 10px;
+    background-color:  #b7135c;;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left:109px;
+    margin-bottom: 15px;
+
+}
+
+form button[type="submit"]:hover {
+    background-color: #38cfd7;
+}
+
+.hidden {
+    display: none;
+}
+/*plan ekle bitiş*/
+
+#maps {
+    width: 50%;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#maps img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ya da contain, istediğine göre */
+    display: block;
+}
+#container2 {
+    gap: 70px;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 140px;
+    
+}
+
+.card {
+    background:  #371783;
+    border-radius: 12px;
+    border: 2px solid ;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #dd8100;
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.trip {
+    margin-top: 10px;
+    padding: 10px;
+    background: #2c2c3f;
+    border-radius: 8px;
+}
+
+.trip h3 {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.stats p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+
+.stats strong {
+    font-size: 24px;
+    color: #930078;
+}
+.site-footer {
+    margin-top: 30px;
+    background-color: #130143;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 210px;
+    height:100px;
+}
+
+.footer-about {
+    max-width: 400px;
+    margin: 10px;
+}
+
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+

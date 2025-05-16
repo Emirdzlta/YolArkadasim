@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seyahat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Seyahatlerim</title>
+</head>
+<body>
+    
+    <div id="header">
+        <div id="logo">
+            <a href="index.html"><img src="image/LOGO2.png" alt="logo"></a>
+        </div>
+        <div id="navbar">
+            <nav class="navbar">
+                <ul class="nav-links">
+                  <li><a href="seyahatlerim.html">Seyahatlerim</a></li>
+                  <li><a href="login.html">Giriş Yap</a></li>
+                </ul>
+              </nav>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+        
+    </div> 
+<div id="container">
+
+    <div class="visited-container">
+        <div class="visited-item" data-country="Amerika">
+            <img src="image/amerika.jpg" alt="Amerika">
+            <div>Amerika</div>
+        </div>
+        <div class="visited-item" data-country="Almanya">
+            <img src="image/almanya.jpg" alt="Almanya">
+            <div>Almanya</div>
+        </div>
+        <div class="visited-item" data-country="İtalya">
+            <img src="image/italya.jpeg" alt="İtalya">
+            <div>İtalya</div>
+        </div>
+        <div class="visited-item" data-country="Paris">
+            <img src="image/paris1.jpg" alt="Paris">
+            <div>Paris</div>
+        </div>
+        <div class="visited-item" data-country="gdd">
+            <img src="https://via.placeholder.com/60" alt="Cape Town">
+            <div>Cape Town</div>
+        </div>
+        <div class="visited-item" data-country="sdg">
+            <img src="https://via.placeholder.com/60" alt="Cairo">
+            <div>Cairo</div>
+        </div>
+        
+    </div>
+    
+    <div class="popup-page" id="infoPopup">
+        <span class="close-btn" onclick="closePopup()">X</span>
+        <div class="popup-page-content">
+            <img src="image/paris1.jpg" alt="Country Icon" id="popupIcon">
+            <h3 id="popupTitle">PARIS</h3>
+            <p id="popupYear">2023</p>
+            <p id="popupComment">Visited in September – had the best pizza ever!</p>
+            <div class="stars" id="popupStars">⭐⭐⭐⭐</div>
+            <button onclick="openInMaps()">Open in Maps</button>
+        </div>
+    </div>
+    
+</div>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="image/LOGO2.png" alt="Footer Logo">
+            </div>
+            <div class="footer-about">
+                <p>Yol Arkadaşım, seyahatlerini kolayca planlayıp keşiflerini unutulmaz hale getiren dijital rota arkadaşın!</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yol Arkadaşım. Tüm hakları saklıdır.</p>
+        </div>
+        <!-- Font Awesome CDN -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </footer>
+
+    <script src="seyahat.js"></script>
+
+</body>
+</html>

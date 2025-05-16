@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <img src="image/singwp3.png" alt="" class="arkaplan">
+    <div id="header">
+        <div id="logo">
+            <a href="index.html"><img src="image/LOGO2.png" alt="logo"></a>
+        </div>
+        <div id="navbar">
+            <nav class="navbar">
+                <ul class="nav-links">
+                  <li><a href="seyahat.html">Seyahatlerim</a></li>
+                  <li><a href="login.html">Giriş Yap</a></li>
+                </ul>
+              </nav>
+        </div>
+        
+    </div>
+</div>
+<div id="formgenel">
+<div class="container">
+    
+  
+        <div class="tab">
+            <button type="button" class="tab-btn" data-tab="signin">Giriş Yap</button>
+<button type="button" class="tab-btn" data-tab="signup">Kayıt Ol</button>
+
+        </div>
+        <form id="form-container">
+            <input type="email" id="email" placeholder="Email" required>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="fa fa-eye" onclick="togglePassword(this)"></i>
+            </div>
+            <button type="submit" class="sign-btn" id="actionButton">Giriş Yap</button>
+            <div class="forgot">
+                <a href="#">Şifreni mi unuttun?</a>
+            </div>
+        </form> 
+   
+
+</div>
+
+</div>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="image/LOGO2.png" alt="Footer Logo">
+            </div>
+            <div class="footer-about">
+                <p>Yol Arkadaşım, seyahatlerini kolayca planlayıp keşiflerini unutulmaz hale getiren dijital rota arkadaşın!</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yol Arkadaşım. Tüm hakları saklıdır.</p>
+        </div>
+        <!-- Font Awesome CDN -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </footer>
+
+
+    <script src="login.js"></script>
+</body>
+</html>

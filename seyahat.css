@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url('image/wp.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+body.dark-mode {
+    background-image: url(image/darkkwp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    width: 30%;
+    height: 100px;
+    margin-left: 50px;
+}
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ya da contain, istediğine göre */
+    display: block;
+}
+#navbar{
+    width: 70%;
+    height: 100px;
+}
+.navbar {
+    width: 100%;
+    height: 70px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+  }
+
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 600px;
+  }
+  
+  .nav-links li a {
+    
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+#container{
+    width: 100%;
+    min-height: 700px;
+
+}
+.visited-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+    flex-direction: row;
+}
+.visited-item {
+    width: 150px;
+    height: 150px;
+    margin: 1em;
+    border-radius: 50%;
+    overflow: hidden; /* dışa taşmayı keser */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.visited-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* tamamen doldur */
+    display: block;
+    border-radius: 0; /* img’ye border-radius verme, kapsayıcı zaten yuvarlak */
+}
+.visited-item div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* siyah şeffaf arka */
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+/* 1) Overlay’i flex yap, içeriği ortala */
+.popup-page {
+  display: none;               /* hali hazırda var */
+  position: fixed;             
+  inset: 0;                    /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(30,30,47,0.9);
+  z-index: 1000;
+  
+  display: flex;               /* ↓ EKLENDİ */
+  align-items: center;         /* dikey ortala */
+  justify-content: center;     /* yatay ortala */
+  padding: 20px;               /* istediğin kadar küçült */
+  box-sizing: border-box;
+}
+
+/* 2) Kartı yalnızca içeriği kadar yüksek yap, fazla olursa scroll */
+.popup-page-content {
+  max-width: 500px;
+  width: 100%;
+  background: #2e2e4f;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  text-align: center;
+
+  max-height: calc(100vh - 40px); /* viewport yüksekliğinden paddingleri çıkar */
+  overflow-y: auto;               /* ihtiyaç varsa scroll */
+}
+
+.popup-page img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+.popup-page h3 {
+    margin: 10px 0;
+    font-size: 26px;
+}
+.popup-page p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.stars {
+    color: gold;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.popup-page button, .popup-page .close-btn {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.popup-page .close-btn {
+    background: transparent;
+    color: #f39c12;
+    font-size: 22px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.site-footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #130143;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.footer-logo img {
+    width: 210px;
+    height: 100px;
+}
+.footer-about {
+    max-width: 400px;
+    margin: 10px;
+}
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+.footer-social a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.footer-social a:hover {
+    color: #f39c12;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #header { flex-direction: column; height: auto; }
+  #logo { margin: 10px auto; width: 50%; }
+  #navbar .nav-links { margin: 10px auto; flex-wrap: wrap; justify-content: center; }
+  #container, #container2, #addtravel, #maps, .container { width: 100% !important; margin: auto !important; }
+  input, textarea, button, .sign-btn { width: 100% !important; margin: 10px 0 !important; }
+}
+@media (max-width: 480px) {
+  .nav-links li a { padding: 6px 8px; font-size: 14px; }
+  body { padding: 0 10px; }
+}

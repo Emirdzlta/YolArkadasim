@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="index.html"><img src="image/LOGO2.png" alt="logo"></a>
+        </div>
+        <div id="navbar">
+            <nav class="navbar">
+                <ul class="nav-links">
+                  <li><a href="seyahat.html">Seyahatlerim</a></li>
+                  <li><a href="login.html">Giriş Yap</a></li>
+                </ul>
+              </nav>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+        
+    </div>
+
+    <div id="container">
+        <div id="addtravel">
+
+            <div class="add-destination">
+              
+                <div class="button-group">
+                    <button id="planBtn" type="button">Plan Ekle</button>
+                    <button id="completedBtn" type="button">Tamamlanmış Seyahat</button>
+                </div>
+            
+                <form id="destinationForm">
+                    <label for="destination">Konum</label>
+                    <input type="text" id="destination" name="destination" required>
+            
+                    <label for="date">Tarih</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="note">Not</label>
+                    <input type="text" id="note" name="note" required>
+            
+                    <div id="notesSection" class="hidden">
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" placeholder="Your notes here..."></textarea>
+                    </div>
+
+                    <div id="button">
+            
+                    <button type="submit">Ekle</button>
+                </div>
+                </form>
+            </div>
+            
+        </div>
+        <div id="maps">
+            <img src="image/harita2.png" alt="Harita">
+        </div>
+
+    </div>
+
+    <div id="container2">
+        <div class="card planned">
+            <h2>Planlanan Seyahatler</h2>
+            <div id="planned-trips"></div>
+        </div>
+
+        <div class="card completed">
+            <h2>Tamamlanmış Seyahatler</h2>
+            <div id="completed-trips"></div>
+        </div>
+
+        <div class="card stats">
+            <h2>İstatistikler</h2>
+            <p><strong id="total-destinations">0</strong> Toplam Rotalar</p>
+            <p><strong id="visited-destinations">0</strong> Ziyaret Edilenler</p>
+        </div>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="image/LOGO2.png" alt="Footer Logo">
+            </div>
+            <div class="footer-about">
+                <p>Yol Arkadaşım, seyahatlerini kolayca planlayıp keşiflerini unutulmaz hale getiren dijital rota arkadaşın!</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yol Arkadaşım. Tüm hakları saklıdır.</p>
+        </div>
+        <!-- Font Awesome CDN -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
